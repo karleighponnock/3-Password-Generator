@@ -13,7 +13,6 @@ function generatePassword() {
 
 
   // Prompt user for password criteria
-  //TODO can only be between 8 and 128 characters
   var numOfChar = prompt("How many characters do you want in your password?");
   if (numOfChar > 8 && numOfChar < 128) {
 
@@ -47,21 +46,9 @@ function generatePassword() {
 
 console.log(passCriteria);
 
-// ????????????????????
-  // Write password to the #password input
-function writePassword(passCriteria){ 
-  //random gen
-Random= new Random(passCriteria );
+  
 
-  // for (var password=o; password < numOfChar; i++)
-
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-}
-
-return password
+return "This is the Password"
 
   } else {
     alert("Must be between 8 and 128 character. Press Generate to try again!")
@@ -69,6 +56,14 @@ return password
   }
 }
 
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
+
+}
 
 // Add event listener to generate button
 //calls for function above to be run
