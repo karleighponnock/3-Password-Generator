@@ -47,18 +47,20 @@ function generatePassword() {
 
 console.log(passCriteria);
 
+// ????????????????????
   // Write password to the #password input
-function writePassword() {
+function writePassword(passCriteria){ 
+  //random gen
+
+  for (var password=o; password < numOfChar; i++)
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
-
-
-return "This is the Password"
+return password
 
   } else {
     alert("Must be between 8 and 128 character. Press Generate to try again!")
