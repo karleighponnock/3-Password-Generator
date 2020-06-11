@@ -63,6 +63,9 @@ function generatePassword() {
 
     return "This is the Password"
 
+
+    // if user inputs a number not within the length 
+    // parameters 8-128 they are prompted to try again
   } else {
     alert("Must be between 8 and 128 character. Press Generate to try again!")
 
