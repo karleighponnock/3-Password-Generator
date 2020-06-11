@@ -51,8 +51,9 @@ console.log(passCriteria);
   // Write password to the #password input
 function writePassword(passCriteria){ 
   //random gen
+Random= new Random(passCriteria );
 
-  for (var password=o; password < numOfChar; i++)
+  // for (var password=o; password < numOfChar; i++)
 
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
