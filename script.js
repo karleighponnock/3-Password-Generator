@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// possible characters
 var upperCharArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var lowerCharArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var numArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -33,14 +34,14 @@ function generatePassword() {
     if (lowerCase) {
       passCriteria.push(lowerCharArray);
     }
-    console.log(passCriteria);
+    // console.log(passCriteria);
 
     // If used confirmed use of uppercase letters this will 
     // push the contents of upperCase array into the criteria array
     if (upperCharArray) {
       passCriteria.push(upperCase);
     }
-    console.log(passCriteria);
+    // console.log(passCriteria);
 
 
     // If used confirmed use of numbers this will 
@@ -48,7 +49,7 @@ function generatePassword() {
     if (numbers) {
       passCriteria.push(numArray);
     }
-    console.log(passCriteria);
+    // console.log(passCriteria);
 
     // If used confirmed use of special characters this will 
     // push the contents of specialCharactersArray into the criteria array
@@ -57,11 +58,11 @@ function generatePassword() {
     }
 
     // not needed for functionality, visual of all criteria for developer
-    console.log(passCriteria);
+    return passCriteria.join("").replace(/,/g,"");
 
 
 
-    return "This is the Password"
+  
 
 
     // if user inputs a number not within the length 
